@@ -1,6 +1,4 @@
 public class CarsAssemble {
-    
-    private int speed;
     public static double prod;
 
     public double LessThan4(int speed) {

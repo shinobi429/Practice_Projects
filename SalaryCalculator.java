@@ -3,8 +3,7 @@ public class SalaryCalculator {;
     public static int productsSold;
     public static int daysSkipped;
     public int baseSalary = 1000;
-    private double finalSalary;
-
+    
     public double salaryMultiplier(int daysSkipped) {
         return daysSkipped>=5 ? 0.85 : 1.00;
     }
@@ -19,7 +18,7 @@ public class SalaryCalculator {;
 
     public double finalSalary(int daysSkipped, int productsSold) {
         double Salary = this.baseSalary * salaryMultiplier(daysSkipped) + bonusForProductsSold(productsSold);
-        return finalSalary = (Salary >= 2000) ? 2000 : Salary;
+        return (Salary >= 2000) ? 2000 : Salary;
     }
     
     public static void main(String[] args) {

@@ -38,7 +38,7 @@
 
 public class BirdWatcher {
     private int[] birdsPerDay;
-    private int[] lastWeeksBirdsCount = new int[]   { 2, 5, 0, 7, 4, 1 };
+    // private int[] lastWeeksBirdsCount = new int[]   { 2, 5, 0, 7, 4, 1 };
 
     public BirdWatcher(int[] birdsPerDay) {
         this.birdsPerDay = birdsPerDay;
@@ -60,7 +60,9 @@ public class BirdWatcher {
 
     public boolean hasDayWithoutBirds() {
         for(int dayCount : birdsPerDay){
-            if(dayCount == 0) return true;
+            if(dayCount == 0) {
+                return true;
+            }
         }
         return false;
     }

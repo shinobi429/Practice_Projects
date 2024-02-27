@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class BasicCalculator {
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
 
         //stores 2 numbers

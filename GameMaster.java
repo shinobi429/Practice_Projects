@@ -1,6 +1,6 @@
 public class GameMaster {
   
-    public String describe(Character character){        
+    public String describe(Characters character){        
         return "You're a level " + character.getLevel() + character.getCharacterClass() + " with " + character.getHitPoints() + " hit points.";
     }
 
@@ -18,11 +18,11 @@ public class GameMaster {
         return "You're traveling to your destination " + method;
     }
 
-    public String describe(Character character,Destinations destination,TravelMethod travelMethod){
+    public String describe(Characters character,Destinations destination,TravelMethod travelMethod){
         return describe(character)+" "+describe(travelMethod)+" "+describe(destination);
     }
 
-    public String describe(Character character,Destinations destination){
+    public String describe(Characters character,Destinations destination){
         return describe(character) + " " + "You're traveling to your destination by walking." + " " + describe(destination);
     } 
 
